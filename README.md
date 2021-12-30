@@ -24,7 +24,7 @@
 </div>
 
 <p>Cadastro de alunos:
-  <a href="" target="_blank">Clique para visitar o projeto</a>
+  <a href="https://ariane-brum.github.io/crud-alunos/" target="_blank">Clique para visitar o projeto</a>
 </p>
 
 <h3 id="funcionalidades">✅ Funcionalidades</h3>
