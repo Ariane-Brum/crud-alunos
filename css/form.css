@@ -1,0 +1,118 @@
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+  margin: 2rem auto;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: center;
+  justify-items: start;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 26%);
+  width: 100%;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.label-form {
+  display: block;
+}
+
+.form input {
+  background: var(--grey-1);
+  border: 1px solid var(--color-6);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+}
+
+.form input:hover,
+input:focus {
+  outline: none;
+  border-color: var(--color-7);
+  background: var(--white);
+  box-shadow: 0 0 0 2px var(--color-6);
+  color: var(--color-6);
+}
+
+.form input:hover::placeholder {
+  color: var(--color-4);
+}
+
+.form-item {
+  width: 100%;
+}
+
+.notas {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.n {
+  margin-top: 20px;
+}
+
+.notas-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.nota-item {
+  width: 100%;
+}
+
+.nota-item > .nota {
+  display: block;
+}
+
+.nota-item .nota {
+  font-size: 12px;
+  color: var(--color-4);
+  text-align: center;
+}
+
+.btn-cadastrar {
+  display: block;
+  border: none;
+  padding: 10px;
+  height: 40px;
+  color: white;
+  font-size: 1.125rem;
+  background: var(--color-4);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.btn-cadastrar:hover {
+  background: var(--color-2);
+}
+
+@media (max-width: 48rem) {
+  /* 768px*/
+  .form {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  /* 500px*/
+  .form {
+    margin: 2rem auto;
+  }
+}

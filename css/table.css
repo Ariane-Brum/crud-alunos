@@ -1,0 +1,86 @@
+.table-container {
+  overflow-x: auto;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 26%);
+}
+
+.table-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.table-container::-webkit-scrollbar-track {
+  background: var(--color-6);
+  border-radius: 5px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: var(--color-4);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 26%);
+}
+
+.table-wrapper {
+  width: 100%;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.table-wrapper thead {
+  background: var(--color-2);
+}
+
+.table-wrapper thead tr th {
+  padding: 0.8rem;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+}
+
+.table-wrapper tbody tr {
+  background: var(--grey-1);
+  transition: 0.3s;
+}
+
+.table-wrapper tbody tr:hover {
+  background: var(--color-6);
+  color: var(--color-8);
+}
+
+.table-wrapper tbody tr td {
+  padding: 0.6rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table-wrapper tbody tr td.aprovado {
+  color: darkgreen;
+}
+
+.table-wrapper tbody tr td.reprovado {
+  color: darkred;
+}
+
+.table-wrapper tbody tr td button {
+  display: block;
+  border: none;
+  padding: 0.4rem 1.5rem;
+  height: 35px;
+  background: transparent;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.table-wrapper button i {
+  color: var(--color-4);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.table-wrapper button i:hover {
+  color: red;
+}

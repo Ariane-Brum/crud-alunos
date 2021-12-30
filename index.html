@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6016c6b4c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Crud - Alunos</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="header-bg">
+          <h1 class="title">Cadastro de Alunos</h1>
+        </header>
+        <div class="form-container">
+          <form id="form" class="form" onsubmit="Form.submit(event)">
+            <div class="form-item">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Nome do Aluno"
+              />
+            </div>
+            <div class="form-item">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="xxxxx-xxxx ou xxxx-xxxx"
+                pattern="[\d]*"
+                maxlength="9"
+                minlength="8"
+                title="Este campo aceita somente caracteres numéricos."
+              />
+            </div>
+            <div class="form-item">
+              <label for="dataNasc">Data de Nascimento</label>
+              <input type="date" id="dataNasc" name="dataNasc" />
+            </div>
+            <div class="notas">
+              <label class="n">Notas do Aluno</label>
+              <div class="notas-wrapper">
+                <div class="nota-item">
+                  <input
+                    type="number"
+                    id="nota1"
+                    name="nota1"
+                    min="0"
+                    max="10"
+                    step="0.1"
+                  />
+                  <label class="nota" for="nota1">Nota 1</label>
+                </div>
+                <div class="nota-item">
+                  <input
+                    type="number"
+                    id="nota2"
+                    name="nota2"
+                    min="0"
+                    max="10"
+                    step="0.1"
+                  />
+                  <label class="nota" for="nota2">Nota 2</label>
+                </div>
+                <div class="nota-item">
+                  <input
+                    type="number"
+                    id="nota3"
+                    name="nota3"
+                    min="0"
+                    max="10"
+                    step="0.1"
+                  />
+                  <label class="nota" for="nota3">Nota 3</label>
+                </div>
+              </div>
+            </div>
+            <button id="cadastrar-aluno" class="btn-cadastrar">
+              Cadastrar Aluno
+            </button>
+          </form>
+        </div>
+
+        <div class="table-container">
+          <table id="table-aluno" class="table-wrapper">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Data de nascimento</th>
+                <th>Nota final</th>
+                <th>Remover</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="footer">Criado por Ariane Brum</p>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
