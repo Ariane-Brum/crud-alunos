@@ -108,6 +108,10 @@ input:focus {
     grid-template-columns: 1fr;
     padding: 1rem;
   }
+
+  .n {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 31.25rem) {
@@ -124,5 +128,6 @@ input:focus {
   }
   .form-container {
     margin: 1rem auto;
+    width: 92%;
   }
 }

@@ -97,6 +97,9 @@
 @media (max-width: 23.375rem) {
   /*374px*/
 
+  .table-container {
+    width: 92%;
+  }
   .table-wrapper {
     padding: 1rem;
   }
