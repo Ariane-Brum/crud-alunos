@@ -46,7 +46,7 @@ input:focus {
   border-color: var(--color-7);
   background: var(--white);
   box-shadow: 0 0 0 2px var(--color-6);
-  color: var(--color-6);
+  color: var(--color-8);
 }
 
 .form input:hover::placeholder {
@@ -114,5 +114,15 @@ input:focus {
   /* 500px*/
   .form {
     margin: 2rem auto;
+  }
+}
+
+@media (max-width: 23.375rem) {
+  /*374px*/
+  .form {
+    margin: 1rem auto;
+  }
+  .form-container {
+    margin: 1rem auto;
   }
 }

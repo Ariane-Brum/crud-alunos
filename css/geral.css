@@ -116,7 +116,15 @@ main {
 @media (max-width: 23.375rem) {
   /*374px*/
 
+  .container {
+    margin: 1rem auto;
+  }
+
   .title {
     font-size: 1.8rem;
+  }
+
+  .footer {
+    margin-top: 1rem;
   }
 }

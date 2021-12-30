@@ -25,17 +25,24 @@
   background: var(--white);
   padding: 2rem;
   border-radius: 5px;
+  border-spacing: 3px;
 }
 
 .table-wrapper thead {
   background: var(--color-2);
+  border-radius: 4px;
 }
 
 .table-wrapper thead tr th {
   padding: 0.8rem;
   color: var(--white);
   font-family: "Poppins", sans-serif;
+  border-radius: 4px;
   white-space: nowrap;
+}
+
+.table-wrapper tbody {
+  border-radius: 4px;
 }
 
 .table-wrapper tbody tr {
@@ -53,6 +60,8 @@
   font-family: "Poppins", sans-serif;
   text-align: center;
   white-space: nowrap;
+  box-shadow: 1px 1px 1px 0px rgb(44 44 44 / 26%);
+  border-radius: 4px;
 }
 
 .table-wrapper tbody tr td.aprovado {
@@ -83,4 +92,12 @@
 
 .table-wrapper button i:hover {
   color: red;
+}
+
+@media (max-width: 23.375rem) {
+  /*374px*/
+
+  .table-wrapper {
+    padding: 1rem;
+  }
 }
