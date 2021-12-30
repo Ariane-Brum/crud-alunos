@@ -82,7 +82,7 @@ main {
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 26%);
   height: fit-content;
-  border: 15px solid var(--color-4);
+  border: 5px solid var(--color-4);
   background: var(--color-3);
 }
 
