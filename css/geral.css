@@ -75,13 +75,16 @@ body {
 /* Main */
 main {
   padding: 0 2rem;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
 }
 .container {
   max-width: 1300px;
+  width: 100%;
   margin: 3rem auto;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgb(44 44 44 / 26%);
-  height: fit-content;
   border: 5px solid var(--color-4);
   background: var(--color-3);
 }
